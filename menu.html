@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <title>YAM - Database | Login & Register</title>
+    <link rel="icon" type="image/png" href="Images/yamLogo.jpg"/>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" tyle="text/css" href="style.css"/>
+    </head>
+
+    <body>
+        <nav class="navbar sticky-top navbar-dark bg-dark">
+            <body data-spy="scroll" data-target=".navbar" data-offset="50">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+    
+    
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <span class="navbar-text">
+                            Navigation
+                            </span>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="menu.html">Login</a>
+                        </li>
+
+                    </ul>
+                </div>
+                
+            </body>
+        </nav>   
+    </body>
+    
+    <div id="Home">
+    </div>
+        <div class="hero-image">
+            <div class="hero-text">
+                
+                <center><h1><b>Yorkshire Air Museum</b></h1></center>
+                <center><h6><i>YAM - Database Home Page</i></h6></center>
+                
+            </div>
+        </div>
+    
+        <div id="About">
+            <pre>
+            
+            </pre>
+            
+            <div class="container">
+                <div class="col-sm">
+                    <ul><center><h1><b>Register Here</b></h1></center></ul>
+                    <hr class="my-4">
+                    <form method="post" action="registerForm.php">
+                        <p>First Name: <input type="text" name="userFirstname" required/></p>
+                        <p>Surname: <input type="text" name="userSurname" required/></p>
+                        <p>Email: <input type="text" name="userEmail" required/></p> 
+                        <p>Password: <input type="text" name="userPass" required/></p>                                      
+                        <p>Tele: <input type="number" name="userTele" required/></p>  
+                        <p>userServiceNumb: <input type="text" name="userServiceNumb" required/></p>   
+                        <p>userAdd1: <input type="text" name="userAdd1" required/></p>   
+                        <p>userCounty: <input type="text" name="userCounty" required/></p>   
+                        <p>userPostcode: <input type="text" name="userPostcode" required/></p>
+                                        
+                        <input type="submit">
+                    </form>
+
+                </div>
+            </div>
+            
+            <pre>
+            
+            </pre>
+            
+        </div>
+    
+    <div class="jumbotron jumbotron-light">    
+        <div id="About">
+            <pre>
+            
+            </pre>
+            
+            <div class="container">
+                <div class="col-sm">
+                    <ul><center><h1><b>Login Here</b></h1></center></ul>
+                    <hr class="my-4">
+                    <div id = "frm">  
+                        <form name="f1" action = "auth.php" onsubmit = "return validation()" method = "POST">  
+                            <p>  
+                                <label> User ID: </label>  
+                                <input type = "text" id ="userID" name  = "userID" required/>  
+                            </p>  
+                            <p>  
+                                <label> Password: </label>  
+                                <input type = "password" id ="userPass" name  = "userPass" required/>  
+                            </p>  
+                            <p>     
+                                <input type =  "submit" id = "btn" value = "Login" />  
+                            </p>  
+                        </form>  
+                    </div>  
+                    <script>  
+                            function validation()  
+                            {  
+                                var id=document.f1.user.value;  
+                                var ps=document.f1.pass.value;  
+                                if(id.length=="" && ps.length=="") {  
+                                    alert("User Name and Password fields are empty");  
+                                    return false;  
+                                }  
+                                else  
+                                {  
+                                    if(id.length=="") {  
+                                        alert("User Name is empty");  
+                                        return false;  
+                                    }   
+                                    if (ps.length=="") {  
+                                    alert("Password field is empty");  
+                                    return false;  
+                                    }  
+                                }                             
+                            }  
+                        </script> 
+                </div>
+            </div>
+            
+            <pre>
+            
+            </pre>
+            
+        </div>  
+    
+    </div>
+
+    <div id="Contact">
+        <pre></pre>
+        
+        <div class="container">
+            <div class="col-sm">
+            <ul><center><h6><b>YAM Collector Database Management</b></h6></center></ul>
+                <pre></pre>
+                <hr class="small">
+                
+                <div class="row justify-content-md-center">
+                    <div class="col col-lg-1">
+                        <ul><a href="index.html">Home</a></ul>
+                    </div>
+                    
+                </div>
+                
+            </div>
+            
+        </div>
+    
+    </div>
+    
+    <div id="Property">
+        <div class="container">
+            <pre></pre>
+            <div class="row justify-content-md-center">
+                <div class="col-sm">
+                    <ul><center><p><font size="2" class="text-muted">Copyright &copy; danieltang.uk 2019</font></p></center></ul>
+                    <ul><center><a href="privacyPolicy.html">Privacy Policy</a></center></ul>
+                </div>
+            </div>
+            <pre></pre>
+        </div>
+    </div>
+
+    </body>
+
+</html>

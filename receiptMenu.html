@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <title>YAM - Database | Receipt Menu</title>
+    <link rel="icon" type="image/png" href="Images/yamLogo.jpg"/>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" tyle="text/css" href="style.css"/>
+    </head>
+
+    <body>
+        <nav class="navbar sticky-top navbar-dark bg-dark">
+            <body data-spy="scroll" data-target=".navbar" data-offset="50">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+    
+    
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <span class="navbar-text">
+                            Navigation
+                            </span>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="menu.html">Login</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="mainMenu.html">Main Menu</a>
+                        </li>
+
+                    </ul>
+                </div>
+                
+            </body>
+        </nav>   
+    </body>
+        </nav>
+        <body>
+
+            <center><h1><b>YAM Collections Receipt Menu</b></h1></center>
+            <hr class="my-4">                   
+            <div class="breakers"></div><br>
+            <div id="load">
+                <div class="load">
+                    <div class="container">
+                        <ul><h3>ADD NEW RECEIPT</h3></ul>
+                        <hr class="my-4">                   
+                        <div class="breakers"></div>
+
+                        <form method="post" action="newReceipt.php">
+                            <p>Your ID Number: <input type="number" name="IDUser" required/></p> 
+                            <p>Receipt Print Date: <input type="number" name="receiptDate" required/></p>   
+                            <p>Receipt Item Count: <input type="number" name="receiptItemCount" required/></p> 
+                            <p>Receipt Number: <input type="number" name="receiptNumb" required/></p>  
+                            <p>Item SEQ: <input type="text" name="itemSEQ" /></p> 
+                            <p>Receipt Description: <input type="text" name="receiptDesc" /></p>        
+                            <p>Receipt Asessment: <input type="text" name="receiptAsses" /></p><br>                              
+                            <input type="submit">
+                        </form>
+
+                    </div>
+                    <hr class="my-4"><br>
+                </div>
+            </div>
+
+            <div id="insert">
+                <div class="insert">
+                    <div class="container">                 
+                        <ul><h3>FIND RECEIPT</h3></ul>
+                        <hr class="my-4">                   
+                        <div class="breakers"></div>
+
+                        <form action="searchReceipt.php" method="post">
+                            
+                            Search by: <select name="column">
+	                        <option value="receiptNumb">Receipt Number</option>
+	                        <option value="IDUser">User ID</option>
+                            </select><br><br>
+                            Type in data that you select: <input type="number" name="search" required><br><br>
+                            <input type ="submit">
+                        </form>
+
+                    </div>
+                    <hr class="my-4">
+                    <br>
+                </div>
+            </div>
+
+            <div class="jumbotron jumbotron-light">
+            <div id="Contact">
+                <pre></pre>
+                
+                <div class="container">
+                    <div class="col-sm">
+                    <ul><center><h6><b>YAM Collectors Database Mangement</b></h6></center></ul>
+                        <pre></pre>
+                        <hr class="small">
+                        
+                        <div class="row justify-content-md-center">
+                            <div class="col col-lg-1">
+                                <ul><center><a href="mainMenu.html"> Main Menu</a></center></ul>
+                            </div>
+                            
+                            <div class="col col-lg-1">
+                                <ul><center><a href="mainMenu.html">Previous Page</a></center></ul>
+                            </div>
+                            
+                            <div class="col col-lg-1">
+                                <ul><center><a href="index.html">Home</a></center></ul>
+                            </div>
+                            
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+            
+            </div>
+                
+            <div id="Property">
+                <div class="container">
+                    <pre></pre>
+                    <div class="row justify-content-md-center">
+                        <div class="col-sm">
+                            <ul><center><p><font size="2" class="text-muted">Copyright &copy; danieltang.uk 2020</font></p></center></ul>
+                            <ul><center><a href="privacyPolicy.html">Privacy Policy</a></center></ul>
+                        </div>
+                    </div>
+                    <pre></pre>
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>

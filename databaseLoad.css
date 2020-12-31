@@ -1,0 +1,9 @@
+*{
+    font-family: Cambria Math;
+    text-align: center;
+    text-indent: 50px;
+}
+
+table, th, td {
+    border: 1px solid black;
+  }
